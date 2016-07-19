@@ -21,7 +21,7 @@ https://github.com/sebastianbergmann/state
  - return() : ClosedOrderState
  - credit() : ClosedOrderState
  
- 
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <specification>
  <configuration>
@@ -56,3 +56,4 @@ https://github.com/sebastianbergmann/state
   <operation name="credit"  allowed="canBeCredited" disallowed="cannotBeCredited"/>
  </operations>
 </specification>
+```
