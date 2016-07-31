@@ -1,5 +1,26 @@
 # module-checkout
 
+
+## Scenarios 
+
+### possible products in carts
+- physical products
+- virtual products
+- mixed physical and virtual products
+- subscription products
+
+### possible payments
+- payment befor shipping (prepayment/vorkasse, paypal, creditcard)
+- payment after shipping (on account/auf rechnung, installments)
+- free
+- partial payment
+
+### possible shippments
+- physical shippments
+- virtual shippment (email, whatsApp, download)
+
+
+
 https://github.com/sebastianbergmann/state
 
 [NewOrderState] -- a new order
