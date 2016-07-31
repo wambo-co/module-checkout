@@ -2,6 +2,9 @@
 
 namespace Wambo\Checkout\Model;
 
+use Wambo\Checkout\Model\Cart\CartInterface;
+use Wambo\Checkout\Model\Payment\PaymentInterface;
+use Wambo\Checkout\Model\Shipment\ShipmentInterface;
 use Wambo\Core\EntityObject\EntityObjectInterface;
 
 class Order implements EntityObjectInterface
@@ -32,5 +35,21 @@ class Order implements EntityObjectInterface
     {
         // TODO: Implement getId() method.
         return 23;
+    }
+
+    /**
+     * @return PaymentInterface
+     */
+    public function getPayment()
+    {
+        return $this->payment;
+    }
+
+    /**
+     * @return ShipmentInterface
+     */
+    public function getShipment()
+    {
+        return $this->shipment;
     }
 }
