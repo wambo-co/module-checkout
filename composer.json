@@ -25,7 +25,8 @@
   },
   "require": {
     "wambo/wambo-composer-installer": "*",
-    "wambo/module-core": "*"
+    "wambo/module-core": "*",
+    "ramsey/uuid": "^3.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.4"

@@ -9,6 +9,7 @@ use Wambo\Core\EntityObject\EntityObjectInterface;
 
 class Order implements EntityObjectInterface
 {
+
     /**
      * @var CartInterface
      */
