@@ -2,10 +2,13 @@
 
 namespace Wambo\Checkout;
 
+use Wambo\Core\App;
+use Wambo\Core\Module\ModuleBootstrapInterface;
+
 class Registration implements ModuleBootstrapInterface
 {
     /**
-     * Register the Frontend module.
+     * Register the Checkout module.
      *
      * @param App $app
      */
@@ -14,6 +17,7 @@ class Registration implements ModuleBootstrapInterface
         $this->configureDI($app);
         $this->registerRoutes($app);
     }
+
     /**
      * Register routes in the slim app.
      *
@@ -21,11 +25,8 @@ class Registration implements ModuleBootstrapInterface
      */
     private function registerRoutes(App $app)
     {
-        // overview
-        $app->get('/', ['CatalogController', 'overview']);
-        // product details
-        $app->get('/product/{slug}', ['CatalogController', 'productDetails']);
     }
+
     /**
      * Configure the dependency injection container
      *
