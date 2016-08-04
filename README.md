@@ -1,7 +1,8 @@
-# module-checkout
+# Wambo Checkout
 
+Wambo checkout converts your carts into orders
 
-## Scenarios 
+## Scenarios
 
 ### possible products in carts
 - physical products
@@ -24,24 +25,24 @@
 https://github.com/sebastianbergmann/state
 
 [NewOrderState] -- a new order
- - ship() : ShippedOrder 
+ - ship() : ShippedOrder
  - pay() : PaiedOrder
  - cancel() : CanceledOrderState
 
 [ShippedOrderState]
  - pay() : PaidOrderState
  - close() : ClosedOrderState
- 
+
 [PaidOrderState]
  - ship() : ShippedOrder
  - close() : ClosedOrderState
- 
+
 [CanceledOrderState]
 
 [ClosedOrderState]
  - return() : ClosedOrderState
  - credit() : ClosedOrderState
- 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <specification>
@@ -78,3 +79,4 @@ https://github.com/sebastianbergmann/state
  </operations>
 </specification>
 ```
+
