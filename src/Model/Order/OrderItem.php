@@ -42,7 +42,7 @@ class OrderItem implements OrderItemInterface
     /**
      * @return SKU
      */
-    public function getSku()
+    public function getSku() : SKU
     {
         return $this->sku;
     }
@@ -50,7 +50,7 @@ class OrderItem implements OrderItemInterface
     /**
      * @return Qty
      */
-    public function getQty()
+    public function getQty() : Qty
     {
         return $this->qty;
     }
@@ -58,7 +58,7 @@ class OrderItem implements OrderItemInterface
     /**
      * @return Money
      */
-    public function getPrice()
+    public function getPrice() : Money
     {
         return $this->price;
     }
