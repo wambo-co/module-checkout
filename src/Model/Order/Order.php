@@ -5,6 +5,7 @@ use Exception;
 use Ramsey\Uuid\UuidInterface;
 use Wambo\Checkout\Model\Payment\PaymentInterface;
 use Wambo\Checkout\Model\Shipment\ShipmentInterface;
+use Wambo\Core\Model\Total;
 
 /**
  * Class Order
@@ -36,6 +37,11 @@ class Order implements OrderInterface
      * @var array
      */
     private $plugins;
+
+    /**
+     * @var Total
+     */
+    private $totals;
 
 
     /**
